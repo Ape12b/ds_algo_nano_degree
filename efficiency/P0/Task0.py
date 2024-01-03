@@ -20,5 +20,9 @@ Print messages:
 "First record of texts, <incoming number> texts <answering number> at time <time>"
 "Last record of calls, <incoming number> calls <answering number> at time <time>, lasting <during> seconds"
 """
-print("First record of texts, <incoming number> texts <answering number> at time <time>")
-"Last record of calls, <incoming number> calls <answering number> at time <time>, lasting <during> seconds"
+
+'''
+Output:
+First record of texts, 97424 22395 texts 90365 06212 at time 01-09-2016 06:03:22
+Last record of calls, 98447 62998 calls (080)46304537 at time 30-09-2016 23:57:15, lasting 2151 seconds
+'''
