@@ -19,4 +19,24 @@ Print a message:
 "<telephone number> spent the longest time, <total time> seconds, on the phone during 
 September 2016.".
 """
+duration = 0
+index = 0
+for i in range(len(calls)):
+    if int(calls[i][-1]) > duration:
+        index = i
+        duration = int(calls[i][-1])
+    
+print(f"{calls[index][0]}, {calls[index][1]} spent the longest time, {duration} seconds, on the phone during September 2016.")
 
+
+'''
+Output:
+output
+89071 50880, (04546)388977 spent the longest time, 4617 seconds, on the phone during September 2016.
+'''
+
+'''
+The algorithm runs in O(n) where n is proportional to the number of rows in calls list.
+CPU times: user 2 µs, sys: 1e+03 ns, total: 3 µs
+Wall time: 4.77 µs
+'''
